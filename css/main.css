@@ -502,7 +502,11 @@ Primary use:
 
   /*---------------------------------------------*/
   .respon1 {
-    font-size: 45px;
+    font-size: 20px;
+  }
+
+  .psc-logo {
+    width: 400px;
   }
 }
 
