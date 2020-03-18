@@ -454,13 +454,9 @@
 
     function contactForm() {
         $('#contactform').submit(function () {
-            debugger
             var action = 'https://formspree.io/xgezzybj';
             $("#message-info").slideUp(250, function () {
                 $('#message-info').hide();
-                $('#submit')
-                    .after('<div class="loader"><div></div></div>')
-                    .attr('disabled', 'disabled');
                 $.post(action, {
                     name: $('#name').val(),
                     email: $('#email').val(),
@@ -470,6 +466,7 @@
                 },
                 
                     function (data) {
+                        debugger;
                         document.getElementById('message-info').innerHTML = data;
                         $('#message-info').slideDown(250);
                         $('#contactform .loader div').fadeOut('slow', function() {
