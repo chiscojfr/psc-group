@@ -464,6 +464,7 @@
                     name: $('#name').val(),
                     email: $('#email').val(),
                     phone: $('#phone').val(),
+                    service: $('#service').val(),
                     message: $('#message').val()
                 },
                     function (data) {
