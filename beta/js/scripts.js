@@ -496,6 +496,11 @@
                 $(this).remove();
             });
             $('#submit').after('<p class="sent-alert" >SENT!</p>');
+            Swal.fire(
+                'Good job!',
+                'You message was sent! We will contact you soon.',
+                'success'
+              )
             $('#contactform .sent-alert').fadeOut('slow', function() {
                 $(this).remove();
             });
