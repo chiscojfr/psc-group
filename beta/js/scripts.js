@@ -457,6 +457,9 @@
             var action = 'https://formspree.io/xgezzybj';
             $("#message-info").slideUp(250, function () {
                 $('#message-info').hide();
+                $('#submit')
+                    .after('<div class="loader"><div></div></div>')
+                    .attr('disabled', 'disabled');
                 $.post(action, {
                     name: $('#name').val(),
                     email: $('#email').val(),
@@ -466,7 +469,6 @@
                 },
                 
                     function (data) {
-                        debugger;
                         document.getElementById('message-info').innerHTML = data;
                         $('#message-info').slideDown(250);
                         $('#contactform .loader div').fadeOut('slow', function() {
@@ -478,6 +480,19 @@
                         }
                     });
             });
+            $('#name').val("");
+            $('#email').val("");
+            $('#phone').val("");
+            $('#service').val("");
+            $('#message').val("");
+            $('#contactform .loader div').fadeOut('slow', function() {
+                $(this).remove();
+            });
+            $('#submit').after('<p class="sent-alert" >SENT!</p>');
+            $('#contactform .sent-alert').fadeOut('slow', function() {
+                $(this).remove();
+            });
+            $('#submit').removeAttr('disabled');
             return false;
         });
     }
