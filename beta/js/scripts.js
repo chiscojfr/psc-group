@@ -479,7 +479,14 @@
                             $('#contactform').slideUp(850, 'easeInOutExpo');
                         }
                     });
+                    setTimeout(function() {messageSentAlert();}, 2000);
+                    
             });
+            return false;
+        });
+    }
+
+    function messageSentAlert(){
             $('#name').val("");
             $('#email').val("");
             $('#phone').val("");
@@ -493,8 +500,6 @@
                 $(this).remove();
             });
             $('#submit').removeAttr('disabled');
-            return false;
-        });
     }
 
     function subscribeForm() {
