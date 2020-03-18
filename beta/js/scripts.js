@@ -454,6 +454,7 @@
 
     function contactForm() {
         $('#contactform').submit(function () {
+            debugger
             var action = 'https://formspree.io/xgezzybj';
             $("#message-info").slideUp(250, function () {
                 $('#message-info').hide();
@@ -467,6 +468,7 @@
                     service: $('#service').val(),
                     message: $('#message').val()
                 },
+                
                     function (data) {
                         document.getElementById('message-info').innerHTML = data;
                         $('#message-info').slideDown(250);
