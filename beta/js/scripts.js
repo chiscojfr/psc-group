@@ -454,7 +454,7 @@
 
     function contactForm() {
         $('#contactform').submit(function () {
-            var action = 'php/contact-form.php';
+            var action = 'https://formspree.io/xgezzybj';
             $("#message-info").slideUp(250, function () {
                 $('#message-info').hide();
                 $('#submit')
