@@ -154,3 +154,7 @@ select {
   outline: none;
   height: 50px;
 }
+
+p {
+  color: black;
+}

@@ -454,7 +454,7 @@
 
     function contactForm() {
         $('#contactform').submit(function () {
-            var action = 'php/contact-form.php';
+            var action = 'https://formspree.io/xgezzybj';
             $("#message-info").slideUp(250, function () {
                 $('#message-info').hide();
                 $('#submit')
@@ -464,8 +464,10 @@
                     name: $('#name').val(),
                     email: $('#email').val(),
                     phone: $('#phone').val(),
+                    service: $('#service').val(),
                     message: $('#message').val()
                 },
+                
                     function (data) {
                         document.getElementById('message-info').innerHTML = data;
                         $('#message-info').slideDown(250);
@@ -477,9 +479,32 @@
                             $('#contactform').slideUp(850, 'easeInOutExpo');
                         }
                     });
+                    setTimeout(function() {messageSentAlert();}, 2000);
+                    
             });
             return false;
         });
+    }
+
+    function messageSentAlert(){
+            $('#name').val("");
+            $('#email').val("");
+            $('#phone').val("");
+            $('#service').val("");
+            $('#message').val("");
+            $('#contactform .loader div').fadeOut('slow', function() {
+                $(this).remove();
+            });
+            $('#submit').after('<p class="sent-alert" >SENT!</p>');
+            Swal.fire(
+                'Good job!',
+                'You message was sent! We will contact you soon.',
+                'success'
+              )
+            $('#contactform .sent-alert').fadeOut('slow', function() {
+                $(this).remove();
+            });
+            $('#submit').removeAttr('disabled');
     }
 
     function subscribeForm() {
