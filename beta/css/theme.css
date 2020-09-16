@@ -572,6 +572,12 @@ a:active {
 	-o-transform: translate3d( -50%, -50%, 0 );
 	transform: translate3d( -50%, -50%, 0 );
 }
+
+@media only screen and (max-width: 500px) {
+	#vossen-youtube, #mute-toggle, #play-toggle {
+		display: none;
+	}
+}
 #play-toggle,
 #mute-toggle {
 	font-size: 23px;
