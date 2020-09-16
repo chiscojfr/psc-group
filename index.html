@@ -1,130 +1,764 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>PSC Group Corp</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <!--===============================================================================================-->
-    <link rel="icon" type="image/png" href="images/icons/favicon.ico" />
-    <!--===============================================================================================-->
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="vendor/bootstrap/css/bootstrap.min.css"
-    />
-    <!--===============================================================================================-->
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="fonts/font-awesome-4.7.0/css/font-awesome.min.css"
-    />
-    <!--===============================================================================================-->
-    <link rel="stylesheet" type="text/css" href="vendor/animate/animate.css" />
-    <!--===============================================================================================-->
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="vendor/select2/select2.min.css"
-    />
-    <!--===============================================================================================-->
-    <link rel="stylesheet" type="text/css" href="css/util.css" />
-    <link rel="stylesheet" type="text/css" href="css/main.css" />
-    <!--===============================================================================================-->
-  </head>
-  <body>
-    <!--  -->
-    <div class="simpleslide100">
-      <div
-        class="simpleslide100-item bg-img1"
-        style="background-image: url('images/bg03.jpg');"
-      ></div>
-    </div>
+    <head>
+        <meta charset="utf-8">
+        <title>PSC Group Corp</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="img/assets/favicon.ico" rel="icon" type="image/png">
+        <link href="css/init.css" rel="stylesheet" type="text/css">
+        <link href="css/ion-icons.min.css" rel="stylesheet" type="text/css">
+        <link href="css/etline-icons.min.css" rel="stylesheet" type="text/css">
+        <link href="css/theme.css" rel="stylesheet" type="text/css">
+        <link href="css/custom.css" rel="stylesheet" type="text/css">
+        <link href="css/colors/purple.css" rel="stylesheet" type="text/css">
+        <link href="css/google.css" rel="stylesheet" type="text/css">
+    </head>
+    <body data-fade-in="true">
 
-    <div class="flex-col-c-sb size1 overlay1">
-      <!--  -->
-      <div class="w-full flex-w flex-sb-m p-l-80 p-r-80 p-t-22 p-lr-15-sm">
-        <div class="wrappic1 m-r-30 m-t-10 m-b-10">
-          <!-- <a href="#"><img src="images/icons/logo.png" alt="LOGO"/></a> -->
-        </div>
+        <div class="pre-loader"><div></div></div>
 
-        <div class="flex-w m-t-10 m-b-10">
-          <!-- <a href="#" class="size2 m1-txt1 flex-c-m how-btn1 trans-04">
-            Sign Up
-          </a> -->
-        </div>
-      </div>
+        <!-- Start Header -->
+        <nav class="navbar nav-down" data-fullwidth="true" data-menu-style="transparent" data-animation="shrink">
+                                        <!-- Styles: light, dark, transparent, transparent-to-dark | Animation: hiding, shrink -->
+            <div class="container">
 
-      <!--  -->
-      <div class="flex-col-c-m p-l-15 p-r-15 p-t-50 p-b-120">
-        <h3 class="l1-txt1 txt-center p-b-40 respon1">
-          Under Construction
-        </h3>
+                <div class="navbar-header">
+                    <div class="container">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar top-bar"></span>
+                            <span class="icon-bar middle-bar"></span>
+                            <span class="icon-bar bottom-bar"></span>
+                        </button>
+                        <a class="navbar-brand to-top" href="#"><img src="img/assets/psc-logo.png" class="logo-light" alt="#"><img src="img/assets/psc-logo.png" class="logo-dark" alt="#"></a>
+                    </div>
+                </div>
 
-        <div class="flex-w flex-c-m cd100">
-          <img src="images/icons/psc-logo.png" alt="LOGO" class="psc-logo" />
-        </div>
-      </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <div class="container">
+                        <ul class="nav navbar-nav menu-right">
+                            <!-- Each section must have corresponding ID ( #hero -> id="hero" ) -->
+                            <li><a href="#hero">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#services">Services</a></li>
+                           
+                            <li><a href="#contact">Contact</a></li>
 
-      <!--  -->
-      <div class="flex-w flex-c-m p-b-35">
-        <!-- <a
-          href="#"
-          class="size3 flex-c-m how-social trans-04 m-r-3 m-l-3 m-b-5"
-        >
-          <i class="fa fa-facebook"></i>
-        </a>
+                            <!-- <li class="nav-separator"></li> -->
+                            <!-- <li  class="nav-icon"><a href="http://facebook.com" target="_blank"><i class="ion-social-facebook"></i></a></li> -->
+                            <!-- <li  class="nav-icon"><a href="http://twitter.com" target="_blank"><i class="ion-social-twitter"></i></a></li> -->
+                            <!-- <li  class="nav-icon"><a href="#" target="_blank"><i class="ion-help-buoy"></i></a></li> -->
+                        </ul>
 
-        <a
-          href="#"
-          class="size3 flex-c-m how-social trans-04 m-r-3 m-l-3 m-b-5"
-        >
-          <i class="fa fa-twitter"></i>
-        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- End Header -->
 
-        <a
-          href="#"
-          class="size3 flex-c-m how-social trans-04 m-r-3 m-l-3 m-b-5"
-        >
-          <i class="fa fa-youtube-play"></i>
-        </a> -->
-      </div>
-    </div>
+        <!-- Hero -->
+        <section id="hero" class="hero-fullscreen parallax" data-overlay-dark="8">
+            <div class="background-image">
+                <video data-youtube-video-id="WSqsjufxHPM" id="vossen-youtube"></video>
+            </div>
 
-    <!--===============================================================================================-->
-    <script src="vendor/jquery/jquery-3.2.1.min.js"></script>
-    <!--===============================================================================================-->
-    <script src="vendor/bootstrap/js/popper.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-    <!--===============================================================================================-->
-    <script src="vendor/select2/select2.min.js"></script>
-    <!--===============================================================================================-->
-    <script src="vendor/countdowntime/moment.min.js"></script>
-    <script src="vendor/countdowntime/moment-timezone.min.js"></script>
-    <script src="vendor/countdowntime/moment-timezone-with-data.min.js"></script>
-    <script src="vendor/countdowntime/countdowntime.js"></script>
-    <script>
-      $(".cd100").countdown100({
-        /*Set Endtime here*/
-        /*Endtime must be > current time*/
-        endtimeYear: 0,
-        endtimeMonth: 0,
-        endtimeDate: 35,
-        endtimeHours: 19,
-        endtimeMinutes: 0,
-        endtimeSeconds: 0,
-        timeZone: ""
-        // ex:  timeZone: "America/New_York"
-        //go to " http://momentjs.com/timezone/ " to get timezone
-      });
-    </script>
-    <!--===============================================================================================-->
-    <script src="vendor/tilt/tilt.jquery.min.js"></script>
-    <script>
-      $(".js-tilt").tilt({
-        scale: 1.1
-      });
-    </script>
-    <!--===============================================================================================-->
-    <script src="js/main.js"></script>
-  </body>
+            <div class="container">
+                <div class="row">
+                    <div class="text-center">
+                        <img src="img/assets/psc-logo.png" height="200" width="600">
+                    </div>
+                    <div class="hero-content-slider mt20" data-autoplay="true" data-speed="4000">
+                        
+                        <!-- <div>
+                            <h1><strong>Audio Visual Management Control</strong></h1>
+                            <p class="lead">PROJECTION | SCREENS | SOUND | LIGHTING</p>
+                            <a href="#service-1" class="btn btn-lg btn-primary btn-scroll">More Info</a>
+                        </div> -->
+
+                        <div>
+                            <h1><strong>Security</strong></h1>
+                            <p class="lead">PREPARE | CONTROL | PROTECT</p>
+                            <a href="#service-2" class="btn btn-lg btn-primary btn-scroll">More Info</a>
+                        </div>
+
+                        <div>
+                            <h1><strong>Life Safety</strong></h1>
+                            <p class="lead">SMART | SAFE | SIMPLE</p>
+                            <a href="#service-2" class="btn btn-lg btn-primary btn-scroll">More Info</a>
+                        </div>
+
+                        <div>
+                            <h1><strong>Accsess Control Security Systems</strong></h1>
+                            <p class="lead">PROTECT | MONITORING | PREVENT INCIDENT</p>
+                            <a href="#service-4" class="btn btn-lg btn-primary btn-scroll">More Info</a>
+                        </div>
+
+                        <div>
+                            <h1><strong>Structured Cabling</strong></h1>
+                            <p class="lead">COMERCIAL BUILDINGS | HOMES</p>
+                            <a href="#service-5" class="btn btn-lg btn-primary btn-scroll">More Info</a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <a id="mute-toggle"><i class="ion-android-volume-mute"></i></a>
+            <a id="play-toggle"><i class="ion-play"></i></a>
+        </section>
+        <!-- End Hero -->
+
+        <!-- About Us -->
+        <!-- <section id="about" class="pt100 pb90">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-md-12 text-center pb20">
+                        <h2>Lorem ipsum dolor<br><strong>Lorem ipsum dolor</strong></h2>
+                        <p class="lead">We create experiences that <span class="color">transform brands</span>, grow businesses<br>and make people’s lives better. Building brands and driving sales with powerful ideas.</p>
+                    </div>
+
+                    <div class="col-sm-6 feature-left">
+                        <i class="icon-telescope size-3x color"></i>
+                        <i class="icon-telescope back-icon"></i>
+                        <div class="feature-left-content">
+                            <h4><strong>Lorem ipsum dolor</strong><br>Lorem ipsum dolor</h4>
+                            <p>Vivamus congue diam vitae tortor imperdiet congue. Nullam sagittis, tristique diam, ut ullamcorper tellus. Cras porttitor massa.</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 feature-left">
+                        <i class="icon-circle-compass size-3x color"></i>
+                        <i class="icon-circle-compass back-icon"></i>
+                        <div class="feature-left-content">
+                            <h4><strong>Lorem ipsum dolor</strong><br>Lorem ipsum dolor</h4>
+                            <p>Duis vel est nec sapien suscipit gravida. Integer vitae tortor dui. Donec libero quam, euismod sit amet enim ac, varius dictum.</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 feature-left">
+                        <i class="icon-genius size-3x color"></i>
+                        <i class="icon-genius back-icon"></i>
+                        <div class="feature-left-content">
+                            <h4><strong>Lorem ipsum dolor</strong><br>Lorem ipsum dolor</h4>
+                            <p>Maecenas sit amet eros luctus dui volutpat sollicitudin id vitae est. Vivamus laoreet adipiscing metus vel fermentum. Sed velit.</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 feature-left">
+                        <i class="icon-layers size-3x color"></i>
+                        <i class="icon-layers back-icon"></i>
+                        <div class="feature-left-content">
+                            <h4><strong>Lorem ipsum dolor</strong><br>Lorem ipsum dolor</h4>
+                            <p>Integer ornare, tellus eget lobortis cursus, metus enim ultricies eros, vitae porttitor elit sapien quis justo. Duis vitae.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section> -->
+        <!-- End About Us -->
+
+        <!-- Start Service Detail -->
+        <section id="service-1" class="parallax pt40 pb40" data-overlay-light="9" style="display: none;">
+            <div class="background-image" style="background-image: url(&quot;img/backgrounds/bg-3.jpg&quot;); opacity: 1; transform: translate3d(0px, 364.719px, 0px);">
+                <img src="img/backgrounds/bg-3.jpg" alt="#">
+            </div>
+            <div class="container">
+                <div class="row vertical-align">
+
+                    <div class="col-md-6 pr30 mt40 mb40">
+                        <h2><strong>Audio Visual Management Control</strong> </h2>
+                        <h4>PROJECTION | SCREENS | SOUND | LIGHTING</h4>
+                        <p>Audio Visual has changed, and is changing rapidly
+                                from an impressive feature to a strategic business
+                                change agent. PSC has the skills, knowledge, and
+                                know-how to help your company harness the
+                                benefits of Audio Visual enhancements for your
+                                company's communication, marketing, and bottom
+                                line. </p>
+                    </div>
+
+                    <div class="col-md-6  mt50 mb50">
+                        <div class="">
+                            <img src="img/services/psc-service-3.jpg">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section id="service-2" class="parallax pt40 pb40" data-overlay-light="9">
+            <div class="background-image" style="background-image: url(&quot;img/backgrounds/bg-4.jpg&quot;); opacity: 1; transform: translate3d(0px, 364.719px, 0px);">
+                <img src="img/backgrounds/bg-4.jpg" alt="#">
+            </div>
+            <div class="container">
+                <div class="row vertical-align">
+                    
+                    <div class="col-md-5 pr30 mt40 mb40">
+                        <h2><strong>Security</strong></h2>
+                        <h4>PREPARE | CONTROL | PROTECT </h4>
+                        <p>PSC is the trusted provider of turnkey
+                                integrated security solutions. Our
+                                engineers and designers will take into
+                                consideration your challenges and goals to
+                                build the most cutting-edge security
+                                solution for your environment. We are
+                                security team is comprised of experts who
+                                will design, build, and maintain your
+                                security systems. </p>
+                    </div>
+                    <div class="col-md-8  mt50 mb50">
+                        <div class="">
+                            <img src="img/services/psc-service-1.png">
+                        </div>
+                    </div>
+                    <div class="col-md-5 pr30 mt40 mb40">
+                        <h2><strong>LIFE SAFETY </strong> </h2>
+                        <h4>SMART | SAFE | SIMPLE</h4>
+                        <p>Be the best at preparing for the worst. The
+                                safety of your employees and customers
+                                are paramount and a critical component in
+                                the design or upgrade of your building.
+                                PSC can design, build, and maintain your
+                                fire alarm, voice evacuation,
+                                mass notification, early detection,
+                                and nurse call systems. critic</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- <section id="service-3" class="parallax pt40 pb40" data-overlay-light="9">
+            <div class="background-image" style="background-image: url(&quot;img/backgrounds/bg-3.jpg&quot;); opacity: 1; transform: translate3d(0px, 364.719px, 0px);">
+                <img src="img/backgrounds/bg-3.jpg" alt="#">
+            </div>
+            <div class="container">
+                <div class="row vertical-align">
+
+                    <div class="col-md-6 pr30 mt40 mb40">
+                        <h2><strong>LIFE SAFETY </strong> </h2>
+                        <h4>SMART | SAFE | SIMPLE</h4>
+                        <p>Be the best at preparing for the worst. The
+                                safety of your employees and customers
+                                are paramount and a critical component in
+                                the design or upgrade of your building.
+                                PSC can design, build, and maintain your
+                                fire alarm, voice evacuation,
+                                mass notification, early detection,
+                                and nurse call systems. critic</p>
+                    </div>
+
+                    <div class="col-md-6  mt50 mb50">
+                        <div class="">
+                            <img src="img/services/psc-service-1.png">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section> -->
+        <section id="service-4" class="parallax pt40 pb40" data-overlay-light="9">
+            <div class="background-image" style="background-image: url(&quot;img/backgrounds/bg-4.jpg&quot;); opacity: 1; transform: translate3d(0px, 364.719px, 0px);">
+                <img src="img/backgrounds/bg-4.jpg" alt="#">
+            </div>
+            <div class="container">
+                <div class="row vertical-align">
+                    
+                    <div class="col-md-6  mt50 mb50">
+                        <div class="">
+                            <img src="img/services/psc-service-4.jpg">
+                        </div>
+                    </div>
+                    <div class="col-md-6 pr30 mt40 mb40">
+                        <h2><strong>ACCESS CONTROL SECURITY SYSTEMS </strong></h2>
+                        <h4>PROTECT | MONITORING | PREVENT INCIDENT  </h4>
+                        <p>PSC provides commercial, industrial, educational,
+                                federal, and military organizations the ability to
+                                enhance the way they protect their people, assets, and
+                                facilities around the clock. With electronic or physical
+                                security access control, PSC offers improved employee
+                                and visitor management by allowing you to permit,
+                                deny, and track entry to any specified area through the
+                                use of electronics.  </p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section id="service-5" class="parallax pt40 pb40" data-overlay-light="9">
+            <div class="background-image" style="background-image: url(&quot;img/backgrounds/bg-3.jpg&quot;); opacity: 1; transform: translate3d(0px, 364.719px, 0px);">
+                <img src="img/backgrounds/bg-3.jpg" alt="#">
+            </div>
+            <div class="container">
+                <div class="row vertical-align">
+
+                    <div class="col-md-6 pr30 mt40 mb40">
+                        <h2><strong>STRUCTURED CABLING</strong> </h2>
+                        <h4>COMERCIAL BUILDINGS | HOMES </h4>
+                        <p>PCS designs, builds, and maintains stateof-the-art communications infrastructure
+                                systems to support the framework or backbone of your business. It
+                                is one of the most important
+                                parts of your building, as it
+                                connects highly critical
+                                systems, and as your
+                                workforce evolves, versatility
+                                and flexibility in you
+                                communications infrastructure
+                                are crucial to your success. </p>
+                                <p>Whether you are moving into a brand-new building or retrofitting your
+                                        existing space, large or small, PCS uses the most advanced design
+                                        tools available in the industry to design, plan and implement a costeffective cabling design for even the most demanding environments.
+                                        You will provide a solution that will support you today and into the
+                                        future. </p>
+                    </div>
+
+                    <div class="col-md-6  mt50 mb50">
+                        <div class="">
+                            <img src="img/services/psc-service-2.jpg">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- End Service Detail -->
+
+        <!-- Who We Are -->
+        <section id="who-we-are" class="parallax pt40 pb40" data-overlay-dark="8">
+            <div class="background-image">
+                <img src="img/backgrounds/bg-2.jpg" alt="#">
+            </div>
+            <div class="container">
+                <div class="row vertical-align">
+
+                    <div class="col-md-6 pr30 mt40 mb40">
+                        <h2><strong>Our Skills</strong><br><span class="color">Mission</span></h2>
+                        <p>To be the providers of technology
+                                solutions and services, which
+                                deliver long term commercial
+                                benefits, based upon our clients
+                                key business needs.
+                                The strategies evolved should be
+                                the best, efficient, durable, flexible
+                                and allow the organizations to
+                                respond rapidly to both market and
+                                customer needs.</p>
+                    </div>
+
+                    <div class="col-md-6 pt40 pb30">
+                        <div class="progress-bars standard transparent-bars" data-animate-on-scroll="on">
+                            <!-- <h5 class="bold">Audio Visual Management Control</h5>
+                            <div class="progress" data-percent="85%">
+                                <div class="progress-bar">
+                                    <span class="progress-bar-tooltip">85%</span>
+                                </div>
+                            </div> -->
+                            <h5 class="bold">Security</h5>
+                            <div class="progress" data-percent="100%">
+                                <div class="progress-bar progress-bar-primary">
+                                    <span class="progress-bar-tooltip">100%</span>
+                                </div>
+                            </div>
+                            <h5 class="bold">Life Safety</h5>
+                            <div class="progress" data-percent="70%">
+                                <div class="progress-bar progress-bar-primary">
+                                    <span class="progress-bar-tooltip">70%</span>
+                                </div>
+                            </div>
+                            <h5 class="bold">Accsess Control Security Systems</h5>
+                            <div class="progress" data-percent="82%">
+                                <div class="progress-bar progress-bar-primary">
+                                    <span class="progress-bar-tooltip">82%</span>
+                                </div>
+                            </div>
+                            <h5 class="bold">Structured Cabling</h5>
+                            <div class="progress" data-percent="82%">
+                                <div class="progress-bar progress-bar-primary">
+                                    <span class="progress-bar-tooltip">82%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- End Who We Are -->
+
+        <!-- Services -->
+        <section id="services" class="pt100 pb90">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center pb20">
+                        <h2 class="">Simplifying Communications</h2>
+                        <p class="lead"><span class="color">flexible solutions for
+                            your business needs</span></p>
+                    </div>
+                    <div class="col-md-4 col-sm-6 feature-left">
+                        <i class="icon-layers size-3x color"></i>
+                        <i class="icon-layers back-icon"></i>
+                        <div class="feature-left-content">
+                            <h4><strong>Pagin & background music</strong></h4>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 feature-left">
+                        <i class="icon-circle-compass size-3x color"></i>
+                        <i class="icon-circle-compass back-icon"></i>
+                        <div class="feature-left-content">
+                            <h4><strong>HD CCTV security solutions</strong></h4>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 feature-left">
+                        <i class="icon-genius size-3x color"></i>
+                        <i class="icon-genius back-icon"></i>
+                        <div class="feature-left-content">
+                            <h4><strong>Fire alarm systems installation</strong></h4>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 feature-left">
+                        <i class="icon-telescope size-3x color"></i>
+                        <i class="icon-telescope back-icon"></i>
+                        <div class="feature-left-content">
+                            <h4><strong>Access control</strong></h4>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 feature-left">
+                        <i class="icon-layers size-3x color"></i>
+                        <i class="icon-layers back-icon"></i>
+                        <div class="feature-left-content">
+                            <h4><strong>Nurse call</strong></h4>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 feature-left">
+                        <i class="icon-gears size-3x color"></i>
+                        <i class="icon-gears back-icon"></i>
+                        <div class="feature-left-content">
+                            <h4><strong>Structured wiring</strong></h4>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 feature-left">
+                        <i class="icon-globe size-3x color"></i>
+                        <i class="icon-globe back-icon"></i>
+                        <div class="feature-left-content">
+                            <h4><strong>Intercom system</strong></h4>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 feature-left">
+                        <i class="icon-globe back-icon"></i>
+                        <div class="feature-left-content">
+                            <h4><strong></strong></h4>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 feature-left">
+                        <i class="icon-globe size-3x color"></i>
+                        <i class="icon-globe back-icon"></i>
+                        <div class="feature-left-content">
+                            <h4><strong>Burglar security</strong></h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Services -->
+        
+
+        <!-- Callout -->
+        <section class="parallax light bg-img-9" data-overlay-light="9">
+            <div class="background-image">
+                <img src="img/backgrounds/bg-5.jpg" alt="#">
+            </div>
+            <div class="container pt100 pb100">
+                <div class="row pt20">
+
+                    <div class="col-md-12 text-center">
+                        <h2>Ready to <span class="bold">start</span> Your Project</h2>
+                        <!-- <p class="lead">Use Wunderkind to build <span class="color">amazing</span> new website</p> -->
+                        <a href="#contact" class="btn btn-md btn-primary btn-appear mt30"><span>Contact Us Now <i class="ion-checkmark"></i></span></a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- End Callout -->
+
+        <!-- Clients Section -->
+        <section class="pt70 pb70">
+            <div class="container">
+                <div class="row">
+
+                    <div class="clients-slider text-center" data-autoplay="false" data-speed="4000">
+                        <div></div>
+                        <div></div>
+                        <div><img src="img/clients/alertus-logo.png"  alt="#"></div>
+                        <div><img src="img/clients/valcom-logo.png" style="margin-top: 32px;" alt="#"></div>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- End Clients -->
+
+        <!-- Get Connected -->
+        <section class="parallax pt100 pb100" data-overlay-dark="9" style="display: none;">
+            <div class="background-image">
+                <img src="img/backgrounds/bg-7.jpg" alt="#">
+            </div>
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-sm-8 mr-auto text-center">
+                        <h2>Get Connected<br><strong>Follow Us</strong></h2>
+                        <p class="lead">Get connected with us on social networks!</p>
+                    </div>
+
+                    <div class="col-md-12">
+                        <ul class="connected-icons social-icons">
+
+                                <li class="connected-icon">
+                                <a target="_blank" href="https://www.facebook.com/">
+                                    <i class="ion-social-facebook"></i>
+                                    <h5>Facebook</h5>
+                                    <p>Like!</p>
+                                </a>
+                            </li>
+
+                            <!-- <li class="connected-icon">
+                                <a target="_blank" href="#">
+                                    <i class="ion-social-youtube"></i>
+                                    <h5>Youtube</h5>
+                                    <p>Watch Our Videos</p>
+                                </a>
+                            </li>
+
+                            <li class="connected-icon">
+                                <a target="_blank" href="#">
+                                    <i class="ion-social-twitter"></i>
+                                    <h5>Twitter</h5>
+                                    <p>Follow Us</p>
+                                </a>
+                            </li>
+
+                            <li class="connected-icon">
+                                <a target="_blank" href="#">
+                                    <i class="ion-social-instagram"></i>
+                                    <h5>Instagram</h5>
+                                    <p>See Our Pictures</p>
+                                </a>
+                            </li>
+
+                            <li class="connected-icon">
+                                <a target="_blank" href="#">
+                                    <i class="ion-social-googleplus"></i>
+                                    <h5>Google+</h5>
+                                    <p>Join Our Circle</p>
+                                </a>
+                            </li>
+
+                            <li class="connected-icon">
+                                <a target="_blank" href="#">
+                                    <i class="ion-social-skype"></i>
+                                    <h5>Skype</h5>
+                                    <p>Get in Touch</p>
+                                </a>
+                            </li> -->
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Get Connected -->
+
+        <!-- Start Price List -->
+        <!-- <section class="pt100 pb100 pricing-1">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-md-12 text-center pb20">
+                        <h2>Pick Some of<br><strong>Our Latest Offers</strong></h2>
+                        <p class="lead">Try for <span class="color">free</span> - Start paying when you're ready.</p>
+                    </div>
+
+                    <div class="col-lg-10 col-md-12 mr-auto">
+
+                        <div class="col-md-4 price-table">
+                            <div class="price-box">
+                                <h5><strong>Starter</strong></h5>
+                                <h1 class="bold price-price">
+                                    <span>Free</span>
+                                </h1>
+                                <div class="price-features">
+                                    <p class="lead">25,000 Visits</p>
+                                    <p>Limited Email Support</p>
+                                    <p><i class="ion-close-round"></i></p>
+                                    <p><i class="ion-close-round"></i></p>
+                                    <p><i class="ion-close-round"></i></p>
+                                </div>
+                                <a href="#" class="btn btn-primary btn-md btn-appear"><span>Sign Up Now <i class="ion-android-arrow-forward"></i></span></a>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 price-table-featured">
+                            <div class="price-box">
+                                <h5><strong>Growth</strong></h5>
+                                <h1 class="bold price-price">
+                                    <sup>$</sup>
+                                    <span>19</span>
+                                </h1>
+                                <div class="price-features">
+                                    <p class="lead">75,000 Visits</p>
+                                    <p>Email Support</p>
+                                    <p>24/7 Free Support</p>
+                                    <p>5GB Bandwidth</p>
+                                    <p>100GB Storage</p>
+                                    <p>Free Upgrades</p>
+                                </div>
+                                <a href="#" class="btn btn-primary btn-md btn-appear"><span>Sign Up Now <i class="ion-android-arrow-forward"></i></span></a>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 price-table">
+                            <div class="price-box">
+                                <h5><strong>Premium</strong></h5>
+                                <h1 class="bold price-price">
+                                    <sup>$</sup>
+                                    <span>59</span>
+                                </h1>
+                                <div class="price-features">
+                                    <p class="lead">225,000 Visits</p>
+                                    <p>Phone Support</p>
+                                    <p>24/7 Free Support</p>
+                                    <p>900GB Bandwidth</p>
+                                    <p>1000TB Storage</p>
+                                </div>
+                                <a href="#" class="btn btn-primary btn-md btn-appear"><span>Sign Up Now <i class="ion-android-arrow-forward"></i></span></a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </section> -->
+        <!-- End Price List -->
+
+        <!-- Contact Info -->
+        <section class="parallax pt110 pb70" data-overlay-dark="8">
+            <div class="background-image">
+                <img src="img/backgrounds/bg-8.jpg" alt="#">
+            </div>
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-md-12 details white text-center">
+                            <h3>office contact <span class="color">direct</span></h3>
+                        <div class="col-md-12 phone-number mb10">
+                            <h2 class="bold"><a href="tel:+17876131440">787-613-1440</a></h2>
+                        </div>
+                        <div class="col-md-12 phone-number mb10">
+                            <h2 class="bold"><a href="tel:+17875032774">787-503-2774</a></h2>
+                        </div>
+                        <div class="col-lg-12">
+                            <h3>jvazquez@<span class="color">psctechpr.com</span></h3>
+                            <h4>36 Corporate Office Park,
+                                    Carr 20 Assertus Building STE 304, <span class="color">Guaynabo PR</span></h4>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- End Contact Info -->
+
+        <!-- Contact Form -->
+        <section id="contact" class="pt120 pb100">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-md-12 text-center pb20">
+                        <h2>Get In Touch<br><strong>Contact Us</strong></h2>
+                        <p class="lead">Request a quote <span class="color">here</span></p>
+                    </div>
+
+                    <div class="col-md-8 col-md-offset-2 contact box-style">
+                        <div id="message-info"></div>
+                        <!-- Forms can be functional only on server. Upload to your server when testing. -->
+                        <form id="contactform" method="post">
+
+                            <div class="col-sm-12">
+                                <input name="name" id="name" placeholder="Your Name *" required/>
+                            </div>
+                            <div class="col-sm-6">
+                                <input name="email" id="email" placeholder="Your Email *" required/>
+                            </div>
+                            <div class="col-sm-6">
+                                <input name="phone" id="phone" placeholder="Your Phone"/>
+                            </div>
+                            <div class="col-sm-12">
+                                    <label for="cars">Requested Service:</label>
+                                <select id="service" name="service">
+                                    <option value="#">Choose a service...</option>
+                                    <!-- <option value="Audio_visual_management_control">Audio visual management control</option> -->
+                                    <!-- <option value="HD_Videoconferencing">HD Videoconferencing</option> -->
+                                    <option value="Digital_signature_|_IPTV_&_video_wall">Digital signature | IPTV & video wall</option>
+                                    <option value="Pagin_&_background_music">Pagin & background music</option>
+                                    <!-- <option value="Sound_masking">Sound masking</option> -->
+                                    <!-- <option value="Acoustict_treatment_solutions">Acoustict treatment solutions</option> -->
+                                    <!-- <option value="Hi_end_theater_&_lighting_control">Hi end theater & lighting control</option> -->
+                                    <option value="HD_CCTV_security_solutions">HD CCTV security solutions</option>
+                                    <option value="Fire_alarm_&_access_control">Fire alarm & access control</option>
+                                    <option value="Nurse_call_&_infant_protection">Nurse call</option>
+                                    <option value="Structured_wiring">Structured wiring</option>
+                                    <option value="Installations_services">Installations services</option>
+                                    <option value="Maintenace_service_plan">Maintenace service plan</option>
+                                    <option value="Other">Other</option>
+                                  </select>
+                            </div>
+                            <div class="col-sm-12">
+                                <textarea name="message" rows="9" id="message" placeholder="Your Message *" required></textarea>
+                            </div>
+                            <div class="col-md-12">
+                                <input type="submit" class="submit btn btn-lg btn-primary" id="submit" value="Send Message"/>
+                            </div>
+
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- End Contact Form -->
+
+        <!-- Map -->
+        <section class="vossen-map">
+            <!-- Paste your map iframe here -->
+            <iframe height="550" src="https://www.google.com/maps/embed?origin=mfe&pb=!1m3!2m1!1sasertus+building!6i15" border="0" marginwidth="0" marginheight="0"></iframe>
+        </section>
+        <!-- End Map -->
+
+        <!-- Start Footer -->
+        <footer id="footer" class="footer style-1 dark">
+                <a href="index.html"><img src="img/assets/psc-logo.png" alt="#" class="mr-auto img-responsive" height="200" width="400"></a>
+                <br>
+                <a href="https://apsgrouppr.com/" target="_blank"><img src="img/assets/aps-logo-trans.png" alt="#" class="mr-auto img-responsive" height="75" width="150"></a>
+            <!-- <ul> -->
+                <!-- <li><a href="https://www.twitter.com/" target="_blank" class="color"><i class="ion-social-twitter"></i></a></li> -->
+                <!-- <li><a href="https://www.facebook.com/" target="_blank" class="color"><i class="ion-social-facebook"></i></a></li> -->
+                <!-- <li><a href="https://www.linkedin.com/" target="_blank" class="color"><i class="ion-social-linkedin"></i></a></li>
+                <li><a href="https://www.pinterest.com/" target="_blank" class="color"><i class="ion-social-pinterest"></i></a></li>
+                <li><a href="https://plus.google.com/" target="_blank" class="color"><i class="ion-social-googleplus"></i></a></li> -->
+            <!-- </ul> -->
+            <div class="text-center">
+                <a href="#"><strong>© PSC Group <script>document.write(new Date().getFullYear())</script></strong></a>
+            </div>
+
+            <!-- Back To Top Button -->
+            <span><a class="scroll-top"><i class="ion-chevron-up"></i></a></span>
+
+        </footer>
+        <!-- End Footer -->
+
+        <script src="js/jquery.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+        <script src="js/init.js"></script>
+        <script src="js/scripts.js"></script>
+    </body>
 </html>
